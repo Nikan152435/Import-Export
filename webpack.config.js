@@ -44,6 +44,9 @@ module.exports = {
       template: './src/index.html', // Указание исходного HTML-файла для генерации
       filename: './index.html', // Указание имени итогового HTML-файла
     }),
-    new MiniCSSExtractPlugin() // Использование MiniCSSExtractPlugin для извлечения CSS в отдельные файлы
+    new MiniCSSExtractPlugin({
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css',
+    }) // Использование MiniCSSExtractPlugin для извлечения CSS в отдельные файлы
   ],
 };

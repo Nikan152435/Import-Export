@@ -1,19 +1,16 @@
-import Character from './domain.js';
+import Character from './domain';
 
-class Game {
-  // код класса Game
+export default class Game {
+  start() {
+    console.log('game started');
+  }
 }
 
-class GameSavingData {
-  // код класса GameSavingData
+export class GameSavingData {
 }
 
-function readGameSaving() {
-  // код функции readGameSaving
+export function readGameSaving() {
 }
 
-function writeGameSaving() {
-  // код функции writeGameSaving
+export function writeGameSaving() {
 }
-
-export { Game as default, GameSavingData, readGameSaving, writeGameSaving, Character };
