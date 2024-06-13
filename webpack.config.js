@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin'); // Подключен�
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin'); // Подключение плагина 'mini-css-extract-plugin' для извлечения CSS в отдельные файлы
 
 module.exports = {
-  entry: "./src/index.js", // Указание точки входа в приложение
+  entry: "./src/app.js", // Указание точки входа в приложение
   output: {
     path: path.resolve(__dirname, 'dist'), // Указание пути для вывода собранных файлов в папку 'dist' в текущем каталоге
   },
